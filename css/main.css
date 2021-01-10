@@ -1,27 +1,89 @@
 :root {
+    font-size: 16px;
+
     --body-font-family: 'Public_Sans', 'Arial', sans-serif;
     --code-font-family: 'JetBrainsMono', sans-serif;
-    --public-sans-wght: 300;
-    --type-scale:1.25;
-    font-size: 16px;
+    --public-sans-wght: 200;
+    --type-scale: 1.10;
+
+
+    /* colors 
+    c1 = orange
+    c2 = beige
+    c3 = blue
+    c4 = grey
+    c5 = black
+    */
+    --c1: #FF8000;
+    --c2: #B06E2C;
+    --c3: #005E7A;
+    --c4: #1D3E47;
+    --c5: #000000;
+    --c6: #aaaaaa;
+
 }
 
 body {
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
     font-family: var(--body-font-family);
-
+    font-weight: var(--public-sans-wght);
+    margin: 0px;
+    padding: 0px;
 }
 
 h1 {
-    font-size: calc(1em * var(--type-scale) * 5);
-    font-weight: 700;
+    font-size: calc(1em * var(--type-scale) * 4);
+    font-weight: 800;
 }
 
 h2 {
-    font-size: calc(1em * var(--type-scale) * 4);
-    font-weight: 500;
+    font-size: calc(1em * var(--type-scale) * 3);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: calc(1em * var(--type-scale) * 2);
+    font-weight: 700;
+}
+
+h4 {
+    font-size: calc(1em * var(--type-scale) * 1);
+    font-weight: 700;
 }
 
 .code {
     font-family: 'JetBrainsMono';
     font-size: 1em;
+}
+
+/* Page content */
+.content {
+    max-width: 1090px;
+    width:80%;
+    margin:auto;
+}
+
+header {
+    background-color: var(--c3);
+    height:60px;
+}
+footer {
+    background-color: var(--c2);
+    min-height: 200px;
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+
+/* Flexbox cards */
+.cards {
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 200px;
+    background-color: yellow;
 }
