@@ -13,12 +13,12 @@ body {
 
 h1 {
     font-size: calc(1em * var(--type-scale) * 5);
-    font-weight: 800;
+    font-weight: 700;
 }
 
 h2 {
     font-size: calc(1em * var(--type-scale) * 4);
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .code {
