@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+        p.col-1 {
+            grid-area: col-1;
+            background-color: sandybrown;
+        }        
+        p.col-2 {
+            grid-area: col-2;
+            background-color: sandybrown;
+        }
+        article.header {
+            grid-area: header;
+            background-color: rgb(165, 96, 244);
+        }
+
+        .card-1 {
+            grid-area: card-1;
+        }
+        .card-2 {
+            grid-area: card-2;
+        }
+        .card-3 {
+            grid-area: card-3;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: seagreen;
+        }
+
+        main {
+            display: grid;
+              grid-template-areas:
+                'header header header header header header'
+                'col-1 col-1 col-1 col-2 col-2 col-2'
+                'card-1 card-1 card-2 card-2 card-3 card-3'
+                'footer footer footer footer footer footer'
+            ;
+
+            grid-gap: 1rem;
+            padding: 1rem;
+        }
+
+        main>* {
+            border: 1px solid black;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            /* This is better for small screens, once min() is better supported */
+            /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+            grid-gap: 1rem;
+            /* This is the standardized property now, but has slightly less support */
+            /* gap: 1rem */ 
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <article class="header">article</article>
+        <p class="col-1">article</p>
+        <p class="col-2">article</p>
+        <div class="card-1">card</div>
+        <div class="card-2">card</div>
+        <div class="card-3">card</div>
+        <footer>footer</footer>
+    </main>
+
+
+</body>
+
+</html>

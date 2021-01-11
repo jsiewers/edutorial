@@ -1,10 +1,10 @@
 :root {
     font-size: 16px;
-
+    
     --body-font-family: 'Public_Sans', 'Arial', sans-serif;
     --code-font-family: 'JetBrainsMono', sans-serif;
     --public-sans-wght: 200;
-    --type-scale: 1.10;
+    --type-scale: 0.8;
 
 
     /* colors 
@@ -17,39 +17,49 @@
     --c1: #FF8000;
     --c2: #B06E2C;
     --c3: #005E7A;
-    --c4: #1D3E47;
-    --c5: #000000;
-    --c6: #aaaaaa;
+    --c4: #052c44;
+    --c5: #1f1f1f;
+    --c6: #d4c4b3;
+    --c7: #f7f4f1;
+    --c8: #cccbca;
+
 
 }
 
 body {
     font-family: 'Arial', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-family: var(--body-font-family);
     font-weight: var(--public-sans-wght);
     margin: 0px;
     padding: 0px;
+    background-color: #fff;
+    color: var(--c5);
+    line-height: calc(var(--type-scale) * 1.5);
 }
 
 h1 {
     font-size: calc(1em * var(--type-scale) * 4);
-    font-weight: 800;
+    font-weight: 700;
+    color:var(--c4);
+    line-height: calc(var(--type-scale) * 1.4);
 }
 
 h2 {
     font-size: calc(1em * var(--type-scale) * 3);
     font-weight: 700;
+    color:var(--c4);
 }
 
 h3 {
     font-size: calc(1em * var(--type-scale) * 2);
     font-weight: 700;
+    color:var(--c4);
 }
 
 h4 {
-    font-size: calc(1em * var(--type-scale) * 1);
     font-weight: 700;
+    color:var(--c4);
 }
 
 .code {
@@ -64,26 +74,53 @@ h4 {
     margin:auto;
 }
 
-header {
-    background-color: var(--c3);
-    height:60px;
+p.col-1 {
+    grid-area: col-1;
+    /* background-color: sandybrown; */
+}        
+p.col-2 {
+    grid-area: col-2;
+    /* background-color: sandybrown; */
 }
-footer {
-    background-color: var(--c2);
-    min-height: 200px;
-    padding-top:1rem;
-    padding-bottom:1rem;
+article.header {
+    grid-area: header;
+    /* background-color: rgb(165, 96, 244); */
 }
 
-/* Flexbox cards */
-.cards {
-    display:flex;
-    width:100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.card-1 {
+    grid-area: card-1;
+}
+.card-2 {
+    grid-area: card-2;
+}
+.card-3 {
+    grid-area: card-3;
+}
+
+footer {
+    grid-area: footer;
+    /* background-color: seagreen; */
+}
+
+main {
+    display: grid;
+      grid-template-areas:
+        'header header header header header header'
+        'col-1 col-1 col-1 col-2 col-2 col-2'
+        'card-1 card-1 card-2 card-2 card-3 card-3'
+        'footer footer footer footer footer footer'
+    ;
+
+    grid-gap: 1.5rem;
+    padding: 1rem;
 }
 
 .card {
-    width: 200px;
-    background-color: yellow;
-}
+    box-sizing: border-box;
+    background-color:var(--c7);
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:  1px 1px 5px var(--c8);
+    padding:1rem;
+    padding-top:0px;
+} 

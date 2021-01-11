@@ -116,16 +116,14 @@
 
     <link href="/fonts/JetBrains_Mono/jetbrains_mono.css" rel="stylesheet" media="all">
     <link href="/fonts/Public_Sans/public_sans.css" rel="stylesheet" media="all">
-    <link href="/css/main.css?v=3" rel="stylesheet" media="all">
-    <link href="/css/navbar.css?v=2" rel="stylesheet" media="all">
+    <link href="/css/main.css?v=6" rel="stylesheet" media="all">
+    <link href="/css/navbar.css?v=3" rel="stylesheet" media="all">
     <script src="/test.js" defer></script>
     <!-- <script src="/main.js" defer></script> -->
     <script src="/js/navbar.js" defer></script>
 </head>
 
 <body>
-    <header></header>
-
     <div id="navbar">
         <div class="content">
             <a id="brand" href="javascript:void(0)">
@@ -140,76 +138,85 @@
     </div>
 
     <div class="content">
-        <h1>Edutorial, webnews and techniques</h1>
-        <h2>Edutorial, webnews and techniques</h2>
-        <h3>Edutorial, webnews and techniques</h3>
-        <h4>Edutorial, webnews and techniques</h4>
+        <main>
+            <article class="header">
+                <h1>Meer leren over design, IT en development</h1>
+            </article> <!-- article-header -->
+            <p class="col-1">Design. Op deze site vind je lesmateriaal en opdrachten waar design een rol bij speelt. Je
+                leert hier niet zozeer vorm te geven, maar je leert hier wel om te gaan met userinterface guidelines en
+                techniek om designs om te zetten in werkende applicaties en producten.
+            </p>
+            <p class="col-2">
+                and
+                going through the cites of the word in classical literature, discovered the undoubtable source.
+                Lorem
+                Ipsum
+                comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
+                Evil)
+                by
+                Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
+                Renaissance.
+                The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                Sections
+                1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their
+                exact
+                original
+                form, accompanied by English versions from the 1914 translation by H. Rackham.
+            </p>
+            <div class="card card-1">
+                <h4>Verdieping software</h4>
+                <p>
+                    Verdieping software is een keuzedeel of MBO-certificaat waarbij je je gaat verdiepen in bepaalde
+                    softare. Onder software kun je een programma verstaan, maar ook frameworks, cms-en of andere tools
+                    die je gebruikt bij software development. Hier vind je tutorials over: Wordpress, drupal, slim,
+                    laravel voor php. Bootstrap en Bootstrap Studio
+                </p>
+            </div>
+            <div class="card card-2">
+                <h4>Front end development</h4>
+                <p>
+                    Dit keuzedeel of MBO-certificaat is een verdieping op basis webdevelopment. Als je de basis van
+                    HTML, CSS en Javascript onder de knie hebt kun je met Frontend Development (K0722) aan de slag. Hier
+                    vind je verschillende onderwerpen die aansluiten bij dit keuzedeel, te weten: Variable fonts, PWA,
+                    SEO
+                </p>
+            </div>
+            <div class="card card-3">
+                <h4>DevOps voor software developers</h4>
+                <p>
+                    Dit keuzedeel/MBO-certificaat is nog in ontwikkeling (jan. 2021). Het wordt ontwikkeld in
+                    samenwerking met o.a. Cisco. Hier vind je materiaal over o.a. Ansible, Docker, Google Cloudplatform,
+                    Git.
+                </p>
+            </div>
+            <footer>
+                <div class="content">
+                    <div class="breadcrumbs">
 
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-            literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-            Hampden-Sydney
-            College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-            and
-            going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum
-            comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil)
-            by
-            Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
-            Renaissance.
-            The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
-            1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
-            original
-            form, accompanied by English versions from the 1914 translation by H. Rackham.
-        </p>
-        <div class="cards">
-            <div class="card">
-                effe teste
-            </div>
-            <div class="card">
-                effe teste
-            </div>
-            <div class="card">
-                effe teste
-            </div>
-            <div class="card">
-                effe teste
-            </div>
-            <div class="card">
-                effe teste
-            </div>
-            <div class="card">
-                effe teste
-            </div>
-            <div class="card">
-                effe teste
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="content">
-            <div class="breadcrumbs">
-
-            </div>
-            <div style="float:right;">
-                <img src="/img/layout/edutorial-orange.svg" alt="logo" width="122px" height="20px">
-            </div>
-            <div id="copyright">
-                <p>&copy; 2021 Alle rechten voorbehouden. Foto's en teksten door Jan Jaap Siewers</p>
-            </div>
-        </div>
-    </footer>
-    <section id="addToHomeScreen">
-        <h2>Install app</h2>
-        <img src="/img/layout/edutorial-icon-orange.svg" alt="Edutorial logo" width="84px" height="84px">
-        <p class="code">
-            Add you app to your home screen<br />
-            <a href="javascript:void(0)" onClick="hidePrompt()" style="text-decoration:none;">No thanks</a>
-            <button onClick="installApp()">Yes, please</button>
-        </p>
-    </section>
-    <div id="instructions">hallo</div>
-    <h3><a href="https://insights.stackoverflow.com/survey/2018/#technology" target="_blank" rel="noopener">Most popular
-            languages</a></h3>
+                    </div>
+                    <div style="float:right;">
+                        <img src="/img/layout/edutorial-orange.svg" alt="logo" width="122px" height="20px">
+                    </div>
+                    <div id="copyright">
+                        <p>&copy; 2021 Alle rechten voorbehouden. Foto's en teksten door Jan Jaap Siewers</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <section id="addToHomeScreen">
+            <h2>Install app</h2>
+            <img src="/img/layout/edutorial-icon-orange.svg" alt="Edutorial logo" width="84px" height="84px">
+            <p class="code">
+                Add you app to your home screen<br />
+                <a href="javascript:void(0)" onClick="hidePrompt()" style="text-decoration:none;">No thanks</a>
+                <button onClick="installApp()">Yes, please</button>
+            </p>
+        </section>
+        <div id="instructions">hallo</div>
+        <h3><a href="https://insights.stackoverflow.com/survey/2018/#technology" target="_blank" rel="noopener">Most
+                popular
+                languages</a></h3>
 </body>
 
 </html>
