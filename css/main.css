@@ -23,7 +23,6 @@
     --c7: #f7f4f1;
     --c8: #cccbca;
 
-
 }
 
 body {
@@ -38,29 +37,26 @@ body {
     line-height: calc(var(--type-scale) * 1.5);
 }
 
-h1 {
-    font-size: calc(1em * var(--type-scale) * 4);
+h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     color:var(--c4);
-    line-height: calc(var(--type-scale) * 1.4);
+    line-height: calc(var(--type-scale) * 1.4);   
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+h1 {
+    font-size: calc(1em * var(--type-scale) * 4);
 }
 
 h2 {
     font-size: calc(1em * var(--type-scale) * 3);
-    font-weight: 700;
-    color:var(--c4);
 }
 
 h3 {
     font-size: calc(1em * var(--type-scale) * 2);
-    font-weight: 700;
-    color:var(--c4);
 }
 
-h4 {
-    font-weight: 700;
-    color:var(--c4);
-}
 
 .code {
     font-family: 'JetBrainsMono';
@@ -73,6 +69,8 @@ h4 {
     width:80%;
     margin:auto;
 }
+
+/* grid */
 
 p.col-1 {
     grid-area: col-1;
@@ -124,3 +122,39 @@ main {
     padding:1rem;
     padding-top:0px;
 } 
+
+/* A2HS */
+
+#addToHomeScreen {
+    display:none;
+    width: 400px;
+    margin:auto;
+    padding:1rem;
+    padding-top:0px;
+    background-color: var(--c7);
+    border:var(--c6) 2px solid;
+    border-radius:16px;
+}
+
+#addToHomeScreen img {
+    display:block;
+    margin:auto;
+    background-color: var(--c4);
+    padding:0.5rem;
+    border-radius:16px;
+}
+
+#addToHomeScreen a {
+    color:rgb(255, 255, 255);
+    background-color:var(--c3);
+    padding:0.7rem;
+    margin:1rem;
+    margin-bottom:0px;
+    line-height: 3rem;
+    border-radius:8px;
+    text-decoration: none;
+}
+
+#addToHomeScreen div {
+    text-align: center;
+}
