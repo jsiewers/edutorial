@@ -11,9 +11,16 @@
     display: block;
     color: #ffffff;
     text-align: center;
-    padding: 10px;
-    padding-top: 32px;
+    padding: 1rem;
     text-decoration: none;
+  }
+
+  #navbar a div {
+    height:40px;
+    width:123px;
+    background-image: url('/img/layout/edutorial-orange-white.svg');
+    background-repeat: no-repeat;
+    margin-top:1rem;
   }
 
   #navbar #brand {
