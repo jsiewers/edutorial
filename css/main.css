@@ -1,3 +1,5 @@
+/* Fonts and colors */
+
 :root {
     font-size: 16px;
 
@@ -8,7 +10,6 @@
     --media-phone: 800px;
     --media-tablet: 1090px;
     --media-desktop: 3840px;
-
 
     /* colors 
     c1 = orange
@@ -64,7 +65,6 @@ h2 {
 h3 {
     font-size: calc(1em * var(--type-scale) * 2);
 }
-
 
 .code {
     font-family: 'JetBrainsMono';
@@ -172,23 +172,20 @@ main {
 }
 
 /* Style the navbar */
-
 #navbar {
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: var(--c3);
 }
 
 /* Navbar links */
-#navbar a {
-    float: left;
-    display: block;
+.menu-item {
     color: #ffffff;
-    text-align: center;
-    padding: 1rem;
     text-decoration: none;
+    padding:1rem;
 }
 
-#navbar a div {
+#navbar-brand {
+    float: left;
     height: 40px;
     width: 123px;
     background-image: url('/img/layout/edutorial-orange-white.svg');
@@ -196,26 +193,44 @@ main {
     margin-top: 1rem;
 }
 
-#navbar #brand {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-right: 60px;
+.navbar-menu, #navbar-hamburger, #navbar-close {
+    position: absolute;
+    top: 1rem;
+    right: 12%;
+    display:block;
 }
 
-#navbar-menu {
-    float: right;
+#navbar-close, #navbar-hamburger {
+    display:none;
+    z-index: 1000;
 }
+
+#menu-opener, #menu-closer {
+    float:right;
+    color:white;
+}
+
+.navbar-menu-sm {
+    position:absolute;
+    top:3rem;
+    left:10%;
+    z-index: 999;
+    width: 80%;
+    background-color: var(--c3);
+}
+
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
+    z-index:10;
     top: 0;
     width: 100%;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky+.content {
-    padding-top: 60px;
+    padding-top: 4rem; 
 }
 
 @media only screen and (max-width: 1090px) {
@@ -234,11 +249,9 @@ main {
 
     /* Navbar */
 
-
-
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
 
     /* Grid */
     main {
@@ -255,17 +268,21 @@ main {
         padding: 1rem;
     }
 
-    /* Navbar */
-    #navbar a div {
-        height: 30px;
-        width: 30px;
-        background-image: url('/img/layout/edutorial-icon-orange-bg-white.svg');
-        background-repeat: no-repeat;
-        margin-top: 0.6rem;
-        margin-bottom: 0.8rem;
+    /* Navigation */
+    #navbar-hamburger {
+        display:block;
     }
 
-    #navbar-menu {
-        display: none;
+    .navbar-menu {
+        display:none;
+    } 
+
+    #navbar-menu > .menu-item {
+        border-bottom:white 1px solid;
+        padding:1rem;
     }
 }
+
+
+
+
