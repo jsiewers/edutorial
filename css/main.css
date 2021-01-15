@@ -243,21 +243,14 @@ div#cards {
     padding:1rem;
 }
 
-.learnpath {
-    padding:2rem;
-    background-image: url('/img/courses/learningpath_mid.svg'); 
-    background-repeat:no-repeat;
-    background-size: 34%;
-    background-position: 20px -50px;
 
-}
+
 #courses .course, #jumbo {
     display:grid;
     grid-template-columns: 1fr 6fr;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 1px 1px 5px var(--c8);   
-    margin-bottom:2rem;
 }
 
 #jumbo {
@@ -274,6 +267,36 @@ div#cards {
     background-size: 95%;
 }
 
+/* TEST */
+
+.learnpath {
+    display:grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+.path {
+
+}
+
+
+  
+  .line {
+    width:3px;
+    height:40px;
+    background-color:black;
+    margin:auto;
+    margin-top:5px;
+    margin-bottom:5px;
+  }
+  
+  .circle {
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin:auto;
+  }
 @media only screen and (max-width: 1090px) {
 
     /* Grid */
