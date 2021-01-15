@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="nl">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -116,120 +113,8 @@
 
     <link href="/fonts/JetBrains_Mono/jetbrains_mono.css" rel="stylesheet" media="all">
     <link href="/fonts/Public_Sans/public_sans.css" rel="stylesheet" media="all">
-    <link href="/css/main.css?v=113" rel="stylesheet" media="all">
+    <link href="/css/main.css?v=117" rel="stylesheet" media="all">
     <script src="https://kit.fontawesome.com/b11e76739c.js" crossorigin="anonymous"></script>
     <!-- <script src="/main.js" defer></script> -->
     <script src="/js/navbar.js?bla5" defer></script>
 </head>
-
-<body>
-    <div id="navbar" class="sticky">
-        <div class="content">
-            <div id="navbar-brand">
-                <a id="brand" href="javascript:void(0)">
-                    <div></div>
-                </a>
-            </div>
-            <div id="navbar-menu" class="navbar-menu">
-                <a class="menu-item active" href="javascript:void(0)">Home</a>
-                <a class="menu-item" href="javascript:void(0)">News</a>
-                <a class="menu-item" href="javascript:void(0)">Contact</a>
-            </div>
-            <div id="navbar-hamburger">
-                <i id="menu-opener" class="fas fa-bars fa-1x"></i>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="content">
-        <main>
-            <article class="header">
-                <h1>Meer leren over design, IT en software development</h1>
-            </article> <!-- article-header -->
-            <p class="col-1">Design. Op deze site vind je lesmateriaal en opdrachten waar design een rol bij speelt. Je
-                leert hier niet zozeer vorm te geven, maar je leert hier wel om te gaan met userinterface guidelines en
-                techniek om designs om te zetten in werkende applicaties en producten.<br />
-                Er is hier vooral veel te doen als het om software development gaat. Veel materiaal is afgestemd op het
-                kwalificatiedossier van de mbo-4 opleiding software developer. Het gaat om beginnerscursussen met een
-                gestructureerde opbouw tot aan artikelen over de laatste ontwikkelingen.
-
-            </p>
-            <p class="col-2">
-                IT. De rol van software developers bij het beheer van applicaties wordt steeds belangrijker. Doordat
-                applicaties door teams worden ontwikkeld zijn ze onderhevig aan veel aanpassingen en veranderingen. Om
-                er toch voor te zorgen dat al die veranderingen goed zijn getest en goed werken moet een development
-                team werken met software om versies in ontwikkeling en in productie te beheren. Denk hierbij aan
-                versiesystemen en tools om het uploaden en configureren van software te automatiseren en te testen.
-            </p>
-        </main>
-
-        <div id="cards">
-            <div class="card">
-                <h4>Verdieping software</h4>
-                <p>
-                    Verdieping software is een keuzedeel of MBO-certificaat waarbij je je gaat verdiepen in bepaalde
-                    softare. Onder software kun je een programma verstaan, maar ook frameworks, cms-en of andere
-                    tools
-                    die je gebruikt bij software development. Hier vind je tutorials over: Wordpress, drupal, slim,
-                    laravel voor php. Bootstrap en Bootstrap Studio
-                </p>
-            </div>
-            <div class="card">
-                <h4>Front end development</h4>
-                <p>
-                    Dit keuzedeel of MBO-certificaat is een verdieping op basis webdevelopment. Als je de basis van
-                    HTML, CSS en Javascript onder de knie hebt kun je met Frontend Development (K0722) aan de slag.
-                    Hier
-                    vind je verschillende onderwerpen die aansluiten bij dit keuzedeel, te weten: Variable fonts,
-                    PWA,
-                    SEO
-                </p>
-            </div>
-            <div class="card">
-                <h4>DevOps voor software developers</h4>
-                <p>
-                    Dit keuzedeel/MBO-certificaat is nog in ontwikkeling (jan. 2021). Het wordt ontwikkeld in
-                    samenwerking met o.a. Cisco. Hier vind je materiaal over o.a. Ansible, Docker, Google
-                    Cloudplatform,
-                    Git.
-                </p>
-            </div>
-            <div class="card">
-                <h4>DevOps voor software developers</h4>
-                <p>
-                    Dit keuzedeel/MBO-certificaat is nog in ontwikkeling (jan. 2021). Het wordt ontwikkeld in
-                    samenwerking met o.a. Cisco. Hier vind je materiaal over o.a. Ansible, Docker, Google
-                    Cloudplatform,
-                    Git.
-                    <a href="learningpath.php">Lees meer</a>
-                </p>
-            </div>
-        </div> <!-- cards -->
-        <footer>
-            <div class="content">
-                <div class="breadcrumbs">
-
-                </div>
-                <div style="float:right;">
-                    <img src="/img/layout/edutorial-orange.svg" alt="logo" width="122px" height="20px">
-                </div>
-                <div id="copyright">
-                    <p>&copy; 2021 Alle rechten voorbehouden. Foto's en teksten door Jan Jaap Siewers</p>
-                    <p>Deze site is op dit moment (11 januari 2021) nog volop in ontwikkeling. Check geregeld om te
-                        zien of er nieuwe content is geplaatst!</p>
-                </div>
-            </div>
-        </footer>
-        <section id="addToHomeScreen">
-            <h3>Install app</h3>
-            <div>
-                <img src="/img/layout/edutorial-icon-orange.svg" alt="Edutorial logo" width="84px" height="84px">
-                <p>Wil je deze website aan je Apps toevoegen?</p>
-                <a href="javascript:void(0)" onClick="hidePrompt()">Nee, liever niet</a>
-                <a href="#" onClick="installApp()">Ja, graag</a>
-            </div>
-        </section>
-</body>
-
-</html>

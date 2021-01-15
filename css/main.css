@@ -170,13 +170,12 @@ div#cards {
     text-align: center;
 }
 
-/* Style the navbar */
+/* Navbar */
 #navbar {
     /* overflow: hidden; */
     background-color: var(--c3);
 }
 
-/* Navbar links */
 .menu-item {
     color: #ffffff;
     text-decoration: none;
@@ -232,7 +231,48 @@ div#cards {
     padding-top: 4rem; 
 }
 
+/* learningpath page -- courses */
 
+#courses .wrap {
+    display:flex;
+    justify-content: space-between;
+
+}
+
+#courses article {
+    padding:1rem;
+}
+
+.learnpath {
+    padding:2rem;
+    background-image: url('/img/courses/learningpath_mid.svg'); 
+    background-repeat:no-repeat;
+    background-size: 34%;
+    background-position: 20px -50px;
+
+}
+#courses .course, #jumbo {
+    display:grid;
+    grid-template-columns: 1fr 6fr;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px var(--c8);   
+    margin-bottom:2rem;
+}
+
+#jumbo {
+    display:block;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px var(--c8);   
+    margin-bottom:2rem;
+    padding:1rem;
+}
+
+#courses .icon {
+    background-repeat:no-repeat;
+    background-size: 95%;
+}
 
 @media only screen and (max-width: 1090px) {
 
