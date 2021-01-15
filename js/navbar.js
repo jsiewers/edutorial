@@ -29,7 +29,7 @@ window.onresize = function() {
 //     console.log("scrolling");
 //      makeNavbarStick()
 // };
-
+ 
 menuOpener.addEventListener('click', function () {
     console.log("menu-opener was clicked!");
     if (this.className === "fas fa-bars fa-1x") {
