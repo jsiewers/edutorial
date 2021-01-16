@@ -113,9 +113,9 @@ main {
 }
 
 div#cards {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap:1rem;
+    grid-gap: 1rem;
 }
 
 .card {
@@ -127,11 +127,12 @@ div#cards {
     padding-top: 0px;
 }
 
-.card a, .card a:visited {
+.card a,
+.card a:visited {
     /* more */
-    margin-top:1rem;
-    float:right;
-    color:var(--c3);
+    margin-top: 1rem;
+    float: right;
+    color: var(--c3);
 }
 
 /* A2HS */
@@ -179,7 +180,7 @@ div#cards {
 .menu-item {
     color: #ffffff;
     text-decoration: none;
-    padding:1rem;
+    padding: 1rem;
 }
 
 #navbar-brand {
@@ -191,27 +192,31 @@ div#cards {
     margin-top: 1rem;
 }
 
-.navbar-menu, #navbar-hamburger, #navbar-close {
+.navbar-menu,
+#navbar-hamburger,
+#navbar-close {
     position: absolute;
     top: 1rem;
     right: 12%;
-    display:block;
+    display: block;
 }
 
-#navbar-close, #navbar-hamburger {
-    display:none;
+#navbar-close,
+#navbar-hamburger {
+    display: none;
     z-index: 1000;
 }
 
-#menu-opener, #menu-closer {
-    float:right;
-    color:white;
+#menu-opener,
+#menu-closer {
+    float: right;
+    color: white;
 }
 
 .navbar-menu-sm {
-    position:absolute;
-    top:3rem;
-    left:10%;
+    position: absolute;
+    top: 3rem;
+    left: 10%;
     z-index: 999;
     width: 80%;
     background-color: var(--c3);
@@ -221,82 +226,98 @@ div#cards {
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
-    z-index:10;
+    z-index: 10;
     top: 0;
     width: 100%;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky+.content {
-    padding-top: 4rem; 
+    padding-top: 4rem;
 }
 
 /* learningpath page -- courses */
 
 #courses .wrap {
-    display:flex;
+    display: flex;
     justify-content: space-between;
 
 }
 
 #courses article {
-    padding:1rem;
+    padding: 1rem;
 }
 
 
 
-#courses .course, #jumbo {
-    display:grid;
+#courses .course,
+#jumbo {
+    display: grid;
     grid-template-columns: 1fr 6fr;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 1px 1px 5px var(--c8);   
+    box-shadow: 1px 1px 5px var(--c8);
 }
 
 #jumbo {
-    display:block;
+    display: block;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 1px 1px 5px var(--c8);   
-    margin-bottom:2rem;
-    padding:1rem;
+    box-shadow: 1px 1px 5px var(--c8);
+    margin-bottom: 2rem;
+    padding: 1rem;
 }
 
 #courses .icon {
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: 95%;
 }
 
 /* TEST */
 
 .learnpath {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 6fr;
+
 }
 
 .path {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
 
 }
 
+.coursewrapper {
+    padding-top: 2rem;
+}
 
-  
-  .line {
-    width:3px;
-    height:40px;
-    background-color:black;
-    margin:auto;
-    margin-top:5px;
-    margin-bottom:5px;
-  }
-  
-  .circle {
+.line {
+    flex-grow: 4;
+    width: 3px;
+    background-color: var(--c3);
+    margin: auto;
+}
+
+.grow-2 {
+    flex-grow:2;
+}
+
+.grow-3 {
+    flex-grow:3;
+}
+
+.circle {
     height: 15px;
     width: 15px;
     background-color: #fff;
     border-radius: 50%;
-    border: 3px solid black;
-    margin:auto;
-  }
+    border: 3px solid var(--c3);
+    margin: auto;
+}
+
 @media only screen and (max-width: 1090px) {
 
     /* Grid */
@@ -314,18 +335,6 @@ div#cards {
 }
 
 @media only screen and (max-width: 770px) {
-    /* Grid */
-    main {
-        display: grid;
-        grid-template-areas:
-            'header'
-            'col-1'
-            'col-2'
-        ;
-       
-}
-
-@media only screen and (max-width: 600px) {
 
     /* Grid */
     main {
@@ -335,24 +344,33 @@ div#cards {
             'col-1'
             'col-2'
         ;
-        padding: 1rem;
+
     }
 
-    /* Navigation */
-    #navbar-hamburger {
-        display:block;
+    @media only screen and (max-width: 600px) {
+
+        /* Grid */
+        main {
+            display: grid;
+            grid-template-areas:
+                'header'
+                'col-1'
+                'col-2'
+            ;
+            padding: 1rem;
+        }
+
+        /* Navigation */
+        #navbar-hamburger {
+            display: block;
+        }
+
+        .navbar-menu {
+            display: none;
+        }
+
+        #navbar-menu>.menu-item {
+            border-bottom: white 1px solid;
+            padding: 1rem;
+        }
     }
-
-    .navbar-menu {
-        display:none;
-    } 
-
-    #navbar-menu > .menu-item {
-        border-bottom:white 1px solid;
-        padding:1rem;
-    }
-}
-
-
-
-

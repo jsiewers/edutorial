@@ -13,34 +13,46 @@
             </p>
         </div>
         <div id="courses">
-            <div class="wrap">
-                <div class="learnpath"></div>
-                <div class="course">
-                    <div class="icon" style="background-image: url('/img/courses/course_css.svg')" alt="css course"></div>
-                    <article>
-                        <div class="heading">
-                            Css 3
-                        </div>
-                        <div class="description">
-                            CSS3 staat voor cascading stylesheets versie 3. Met CSS 3 breng je stijl aan in een webpaging. Met CSS3 definieer je kleur, afmetingen, lettertypen en animaties. Kortom alles wat met het uiterlijk van een webapplicatie te maken heeft.
-                        </div>
-                    </article>
-                </div> <!-- course -->
-            </div> <!-- wrap -->
-            <div class="wrap">
-                <div class="learnpath"></div>
-                <div class="course">
-                    <div class="icon" style="background-image: url('/img/courses/course_php8_beginners.svg')" alt="css course"></div>
-                    <article>
-                        <div class="heading">
-                            Css 3
-                        </div>
-                        <div class="description">
-                            CSS3 staat voor cascading stylesheets versie 3. Met CSS 3 breng je stijl aan in een webpaging. Met CSS3 definieer je kleur, afmetingen, lettertypen en animaties. Kortom alles wat met het uiterlijk van een webapplicatie te maken heeft.
-                        </div>
-                    </article>
-                </div> <!-- course -->
-            </div> <!-- wrap -->
+            <div class="learnpath">
+                <div class="path">
+                    <div class="line grow-2"></div>
+                    <div class="circle"></div>
+                    <div class="line grow-3"></div>
+                </div>
+                <div class="coursewrapper">
+                    <div class="course">
+                        <div class="icon" style="background-image: url('/img/courses/course_css.svg')" alt="css course"></div>
+                        <article>
+                            <div class="heading">
+                                Css 3
+                            </div>
+                            <div class="description">
+                                CSS3 staat voor cascading stylesheets versie 3. Met CSS 3 breng je stijl aan in een webpaging. Met CSS3 definieer je kleur, afmetingen, lettertypen en animaties. Kortom alles wat met het uiterlijk van een webapplicatie te maken heeft.
+                            </div>
+                        </article>
+                    </div> <!-- course -->
+                </div><!-- wrapper -->
+            </div><!-- learnpath -->
+            <div class="learnpath">
+                <div class="path">
+                    <div class="line grow-2"></div>
+                    <div class="circle"></div>
+                    <div class="line grow-3"></div>
+                </div>
+                <div class="coursewrapper">
+                    <div class="course">
+                        <div class="icon" style="background-image: url('/img/courses/course_css.svg')" alt="css course"></div>
+                        <article>
+                            <div class="heading">
+                                Css 3
+                            </div>
+                            <div class="description">
+                                CSS3 staat voor cascading stylesheets versie 3. Met CSS 3 breng je stijl aan in een webpaging. Met CSS3 definieer je kleur, afmetingen, lettertypen en animaties. Kortom alles wat met het uiterlijk van een webapplicatie te maken heeft.
+                            </div>
+                        </article>
+                    </div> <!-- course -->
+                </div><!-- wrapper -->
+            </div><!-- learnpath -->
         </div><!-- courses -->
     </div> <!-- content -->
     <?php include("footer.php"); ?>

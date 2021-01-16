@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/img/ios/apple-launch-180.png">
     <link rel="mask-icon" href="/img/ios/editorial.svg" color="#005E7A">
-    <link rel="icon" type="image/png" sizes="16x16" href="/android/icon-16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/android/icon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/android/edutorial-icon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/android/edutorial-icon-32.png">
     <meta name="msapplication-TileColor" content="#005E7A">
     <meta name="theme-color" content="#FF8000">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -113,7 +113,7 @@
 
     <link href="/fonts/JetBrains_Mono/jetbrains_mono.css" rel="stylesheet" media="all">
     <link href="/fonts/Public_Sans/public_sans.css" rel="stylesheet" media="all">
-    <link href="/css/main.css?v=117" rel="stylesheet" media="all">
+    <link href="/css/main.css?v=128" rel="stylesheet" media="all">
     <script src="https://kit.fontawesome.com/b11e76739c.js" crossorigin="anonymous"></script>
     <!-- <script src="/main.js" defer></script> -->
     <script src="/js/navbar.js?bla5" defer></script>
