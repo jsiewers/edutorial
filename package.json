@@ -1,0 +1,14 @@
+{
+  "name": "edutorial",
+  "version": "1.0.0",
+  "description": "Edutorial.nl Website met tutorials en verhalen over webontwikkeling. Auteur: Jan Jaap Siewers",
+  "author": "Jan Jaap Siewers",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "del": "^6.0.0"
+  }
+}
